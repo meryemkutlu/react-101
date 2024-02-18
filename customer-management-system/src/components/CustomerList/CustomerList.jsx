@@ -1,9 +1,12 @@
-import React from "react";
+import CustomerItem from "../CustomerItem/CustomerItem";
+import "./CustomerList.css";
 
-function CustomerList() {
+function CustomerList({ customers }) {
   return (
     <ul className="customer-list">
-      <li className="customer-item"></li>
+      {customers.map((customer) => (
+        <CustomerItem customer={customer} key={customer.id} />
+      ))}
     </ul>
   );
 }
