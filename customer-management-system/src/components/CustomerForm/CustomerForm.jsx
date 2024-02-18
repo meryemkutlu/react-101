@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./CustomerForm.css";
 
 function CustomerForm({ addNewCustomer }) {
-  const [customerName, setCustomerName] = useState();
+  const [customerName, setCustomerName] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
